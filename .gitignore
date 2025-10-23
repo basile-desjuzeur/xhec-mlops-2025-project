@@ -87,3 +87,4 @@ secrets/*
 .DS_Store
 
 *.csv
+mlruns/
