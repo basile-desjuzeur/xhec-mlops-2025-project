@@ -11,9 +11,9 @@ authors = [
   { name = "Côme Malézieux", email = "come.malezieux@hec.edu" },
   { name = "Thomas Milcent", email = "thomas.milcent@hec.edu" },
   { name = "Nicolas Guillet", email = "nicolas.guillet@hec.edu" },
-] # TODO: add authors here
+]
 description = "X-HEC MLOps Project on Abalone age prediction model"
-requires-python = ">3.10" # TODO: update this version
+requires-python = ">3.11"
 dependencies = [
     "pre-commit>=4.3.0",
     "pydantic>=2.12.3",
