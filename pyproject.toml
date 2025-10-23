@@ -7,6 +7,10 @@ name = "xhec-mlops-project-student"
 version = "0.0.1"
 authors = [
   { name = "Basile Desjuzeur", email = "basile.desjuzeur@hec.edu" },
+  { name = "Paul Lacombe", email = "paul.lacombe@hec.edu" },
+  { name = "Côme Malézieux", email = "come.malezieux@hec.edu" },
+  { name = "Thomas Milcent", email = "thomas.milcent@hec.edu" },
+  { name = "Nicolas Guillet", email = "nicolas.guillet@hec.edu" },
 ] # TODO: add authors here
 description = "X-HEC MLOps Project on Abalone age prediction model"
 requires-python = ">3.10" # TODO: update this version
