@@ -1,1 +1,9 @@
-# Use this module to code a `pickle_object` function. This will be useful to pickle the model (and encoder if need be).
+import pickle
+
+import Path
+
+
+def pickle_object(obj: object, path: str) -> None:
+    """Pickle the given object to the specified path."""
+    with Path.open(path, "wb") as f:
+        pickle.dump(obj, f)
