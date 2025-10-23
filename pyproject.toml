@@ -32,6 +32,11 @@ dependencies = [
   "gdown==5.2.0",
 ]
 
+[tool.setuptools.packages.find]
+include = ["xhec_mlops_project_student*"]
+exclude = ["data*", "assets*", "notebooks*", "tests*"]
+
+
 [tool.uv]
 default-groups = ["dev"]
 
