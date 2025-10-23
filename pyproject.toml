@@ -13,7 +13,7 @@ authors = [
   { name = "Nicolas Guillet", email = "nicolas.guillet@hec.edu" },
 ]
 description = "X-HEC MLOps Project on Abalone age prediction model"
-requires-python = ">3.10"
+requires-python = ">3.11"
 
 dependencies = [
   "seaborn==0.12.2",
