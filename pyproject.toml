@@ -13,7 +13,7 @@ authors = [
   { name = "Nicolas Guillet", email = "nicolas.guillet@hec.edu" },
 ]
 description = "X-HEC MLOps Project on Abalone age prediction model"
-requires-python = ">3.11"
+requires-python = ">=3.11"
 
 dependencies = [
   "seaborn==0.12.2",
@@ -31,6 +31,11 @@ dependencies = [
   "setuptools==80.9.0",
   "gdown==5.2.0",
 ]
+
+[tool.setuptools.packages.find]
+include = ["xhec_mlops_project_student*"]
+exclude = ["data*", "assets*", "notebooks*", "tests*"]
+
 
 [tool.uv]
 default-groups = ["dev"]
