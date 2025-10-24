@@ -1,5 +1,5 @@
 version = 1
-revision = 2
+revision = 3
 requires-python = ">=3.11"
 resolution-markers = [
     "python_full_version >= '3.12' and sys_platform != 'win32'",
@@ -2081,6 +2081,18 @@ wheels = [
 ]
 
 [[package]]
+name = "pydot"
+version = "4.0.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "pyparsing" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/50/35/b17cb89ff865484c6a20ef46bf9d95a5f07328292578de0b295f4a6beec2/pydot-4.0.1.tar.gz", hash = "sha256:c2148f681c4a33e08bf0e26a9e5f8e4099a82e0e2a068098f32ce86577364ad5", size = 162594, upload-time = "2025-06-17T20:09:56.454Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/7e/32/a7125fb28c4261a627f999d5fb4afff25b523800faed2c30979949d6facd/pydot-4.0.1-py3-none-any.whl", hash = "sha256:869c0efadd2708c0be1f916eb669f3d664ca684bc57ffb7ecc08e70d5e93fee6", size = 37087, upload-time = "2025-06-17T20:09:55.25Z" },
+]
+
+[[package]]
 name = "pygments"
 version = "2.19.2"
 source = { registry = "https://pypi.org/simple" }
@@ -2814,6 +2826,25 @@ wheels = [
 ]
 
 [[package]]
+name = "skrub"
+version = "0.6.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "jinja2" },
+    { name = "matplotlib" },
+    { name = "numpy" },
+    { name = "pandas" },
+    { name = "pydot" },
+    { name = "requests" },
+    { name = "scikit-learn" },
+    { name = "scipy" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/9a/33/4e566b9bd590fc57442daa6879b7048dcf52be0fdc1bdf5af9472252a597/skrub-0.6.2.tar.gz", hash = "sha256:0573f1c12b5bfc609f28adecf091893ab4f09d6bbb94a3db20058c7572568e77", size = 7966546, upload-time = "2025-09-25T15:06:56.252Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/12/c9/5c73686480c7cd84400c27f7120ebb378caf94beaaf26ba56471625e1c66/skrub-0.6.2-py3-none-any.whl", hash = "sha256:c4478caf511f128ff60469e77e4f1b3a20f9b391b69765ad73f28d794256270f", size = 478814, upload-time = "2025-09-25T15:06:53.866Z" },
+]
+
+[[package]]
 name = "smmap"
 version = "5.0.2"
 source = { registry = "https://pypi.org/simple" }
@@ -3191,6 +3222,7 @@ dependencies = [
     { name = "scikit-learn" },
     { name = "seaborn" },
     { name = "setuptools" },
+    { name = "skrub" },
     { name = "uvicorn" },
 ]
 
@@ -3217,6 +3249,7 @@ requires-dist = [
     { name = "scikit-learn", specifier = "==1.5.2" },
     { name = "seaborn", specifier = "==0.12.2" },
     { name = "setuptools", specifier = "==80.9.0" },
+    { name = "skrub", specifier = ">=0.6.2" },
     { name = "uvicorn", specifier = "==0.23.2" },
 ]
 
