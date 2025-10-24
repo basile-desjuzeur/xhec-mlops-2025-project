@@ -11,6 +11,20 @@
 
 Welcome to your MLOps project! In this hands-on project, you'll build a complete machine learning system to predict the age of abalone (a type of sea snail) using physical measurements instead of the traditional time-consuming method of counting shell rings under a microscope.
 
+## 📚 Table of Contents
+
+- [Project Overview](#-project-overview)
+- [About the Dataset](#-about-the-dataset)
+- [Built With](#-built-with)
+- [Quick Start](#-quick-start)
+- [Prerequisites](#-prerequisites)
+- [Setup Steps](#setup-steps)
+- [Terminals](#terminals)
+- [Python Installation](#python-installation)
+- [Docker Desktop](#docker-desktop)
+- [Git](#git)
+- [Install requirements](#install-requirements)
+
 **Your Mission**: Transform a simple ML model into a production-ready system with automated training, deployment, and prediction capabilities.
 
 ## 📊 About the Dataset
@@ -23,6 +37,18 @@ Traditionally, determining an abalone's age requires:
 **Your Goal**: Use easier-to-obtain physical measurements (shell weight, diameter, etc.) to predict the age automatically.
 
 📥 **Download**: Get the dataset from the [Kaggle page](https://www.kaggle.com/datasets/rodolfomendes/abalone-dataset)
+
+## 🛠 Built With
+
+This project leverages the following technologies:
+
+- **Python** 3.10 / 3.11
+- **FastAPI** – for building the REST API
+- **Prefect** – for orchestration and pipeline management
+- **Docker** – for containerizing the application
+- **uv** – for managing environments and dependencies
+- **Pre-commit** – for code quality automation
+- **Ruff** – for linting
 
 ## 🚀 Quick Start
 
