@@ -2,26 +2,33 @@
 
 import argparse
 from pathlib import Path
-
+from prefect import flow
 import pandas as pd
 from preprocessing import preprocess_data
 from training import train_model
 from utils import pickle_object
+from logging import Logger
 
 
+@flow("Model")
 def main(trainset_path: Path) -> None:
     """Train a model using the data at the given path and save the model (pickle)."""
     # Read data
     df = pd.read_csv(trainset_path)
+    Logger.info("Reading data")
 
     # Preprocess data
     X_train, y_train, tv = preprocess_data(df)
+    Logger.info("Preprocessing...")
+
 
     # (Optional) Pickle encoder if need be
     pickle_object(tv, Path("src/web_service/local_objects/table_vectorizer.pkl"))
 
     # Train model
     model = train_model(X_train, y_train)
+    Logger.info("Training the Model...")
+   
 
     # Pickle model
     pickle_object(model, Path("src/web_service/local_objects/regression_model.pkl"))
