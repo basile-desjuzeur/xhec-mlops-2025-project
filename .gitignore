@@ -88,4 +88,3 @@ secrets/*
 
 *.csv
 mlruns/
-src/web_service/*
