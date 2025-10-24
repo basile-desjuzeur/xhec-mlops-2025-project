@@ -1,8 +1,15 @@
-from app_config import APP_DESCRIPTION, APP_TITLE, APP_VERSION, MODEL_VERSION, PATH_TO_MODEL, PATH_TO_PREPROCESSOR
+from src.web_service.app_config import (
+    APP_DESCRIPTION,
+    APP_TITLE,
+    APP_VERSION,
+    MODEL_VERSION,
+    PATH_TO_MODEL,
+    PATH_TO_PREPROCESSOR,
+)
 from fastapi import FastAPI
-from lib.modelling.inference import run_inference
-from lib.models import AbaloneInput, AbalonePredictionOut
-from lib.utils import load_model, load_preprocessor
+from src.web_service.lib.inference import run_inference
+from src.web_service.lib.models import AbaloneInput, AbalonePredictionOut
+from src.web_service.utils import load_model, load_preprocessor
 
 app = FastAPI(title=APP_TITLE, description=APP_DESCRIPTION, version=APP_VERSION)
 

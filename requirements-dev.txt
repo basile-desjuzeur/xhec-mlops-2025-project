@@ -5,7 +5,10 @@
 #    pip-compile requirements-dev.in
 #
 -e .
-    # via -r requirements-dev.in
+numpy
+pandas
+scikit-learn==1.5.2
+skrub
 aiosqlite==0.21.0
     # via
     #   -r requirements-dev.in
