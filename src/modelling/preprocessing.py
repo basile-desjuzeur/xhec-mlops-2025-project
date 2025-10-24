@@ -1,9 +1,10 @@
 import pandas as pd
+from prefect import task
 from sklearn.preprocessing import StandardScaler
 from skrub import TableVectorizer
-from prefect import task
 
-@task("preprocessing")
+
+@task
 def preprocess_data(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame, TableVectorizer]:
     """Preprocess the input DataFrame and return the features and fitted TableVectorizer."""
     X, y = df.drop(columns=["Rings"]), df[["Rings"]]
