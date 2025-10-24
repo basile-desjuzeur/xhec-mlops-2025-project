@@ -22,14 +22,14 @@ def main(trainset_path: Path) -> None:
     print("Preprocessing...")
 
     # (Optional) Pickle encoder if need be
-    pickle_object(tv, Path("src/web_service/local_objects/table_vectorizer.pkl"))
+    pickle_object(tv, Path("./web_service/local_objects/table_vectorizer.pkl"))
 
     # Train model
     model = train_model(X_train, y_train)
     print("Training the Model...")
 
     # Pickle model
-    pickle_object(model, Path("src/web_service/local_objects/regression_model.pkl"))
+    pickle_object(model, Path("./web_service/local_objects/regression_model.pkl"))
 
 
 if __name__ == "__main__":
